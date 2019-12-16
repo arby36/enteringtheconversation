@@ -2,20 +2,43 @@
 font-family: 'EB Garamond', serif;*/
 .header-text {
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Cambria";
+    color: white;
 }
 .subheader-text {
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Cambria";
+    color: white;
 }
 .text {
     text-align: center;
     font-family: 'Roboto Slab', serif;
+    color: white;
 }
 .mdc-card {
-    padding: 5% 5% 5% 5%
+    padding: 5% 5% 5% 5%;
+    background-color: #504f54;
 }
 .mdc-layout-grid__inner {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    padding-top: 2%;
+}
+.section {
+    height: 100vh;
+    padding-top: 0;
+    
+}
+html {
+    background-color: #504f54;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 0 0 0;
+}
+.background-parallax {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.parallax-scene {
+    
 }
