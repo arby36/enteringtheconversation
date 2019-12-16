@@ -1,5 +1,12 @@
 /*font-family: 'Cinzel', serif;
 font-family: 'EB Garamond', serif;*/
+html {
+    background-color: #504f54;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 0 0 0;
+}
 .header-text {
     text-align: center;
     font-family: "Cambria";
@@ -15,6 +22,9 @@ font-family: 'EB Garamond', serif;*/
     font-family: 'Roboto Slab', serif;
     color: white;
 }
+.italic {
+    font-style: italic;
+}
 .mdc-card {
     padding: 5% 5% 5% 5%;
     background-color: #504f54;
@@ -27,15 +37,8 @@ font-family: 'EB Garamond', serif;*/
     padding-top: 0;
     
 }
-html {
-    background-color: #504f54;
-    scroll-behavior: smooth;
-}
-body {
-    margin: 0 0 0 0;
-}
 .background-parallax {
-    object-fit: cover;
+    object-fit: none;
     width: 100vw;
     height: 100vh;
 }
