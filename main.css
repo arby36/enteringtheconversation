@@ -1,3 +1,21 @@
+/*font-family: 'Cinzel', serif;
+font-family: 'EB Garamond', serif;*/
 .header-text {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.subheader-text {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.text {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.mdc-card {
+    padding: 5% 5% 5% 5%
+}
+.mdc-layout-grid__inner {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
