@@ -21,8 +21,8 @@
                             <div class="mdc-card">
                                 <h1 class="header-text">Entering the Conversation</h1>
                                 <h2 class="subheader-text">Alex Bruce</h2>
-                                <p class="text">Honors English | Michell</p>
-                                <p class="text">2019</p>
+                                <p class="text">Honors English 3/4| Michell | 2019</p>
+                                <p class="text">Click Anywhere to Continue</p>
                             </div>
                         </div>
                         <div class="mdc-layout-grid__cell"></div>
@@ -69,6 +69,12 @@
         </div>
         <div id="section3">
             <div class="parallax-scene" id="parallax-scene-three">
+                <img src="ferguson.jpg" class="background-parallax" data-depth="0.1">
+                <img src="infographic.png" class="background-parallax-single" data-depth="0.2">
+            </div>
+        </div>
+        <div id="section4">
+            <div class="parallax-scene" id="parallax-scene-four">
                 <img src="usmap.jpg" class="background-parallax" data-depth="0.1">
                 <div class="mdc-layout-grid section" id="section3" depth-depth="0.2">
                     <div class="mdc-layout-grid__inner section">
@@ -116,8 +122,8 @@
                 </div>
             </div>
         </div>
-        <div id="section4">
-            <div class="parallax-scene" id="parallax-scene-four">
+        <div id="section5">
+            <div class="parallax-scene" id="parallax-scene-five">
                 <img src="feddyd.png" class="background-parallax" data-depth="0.1">
                 <div class="mdc-layout-grid section" data-depth="0.2">
                     <div class="mdc-layout-grid__inner section">
@@ -167,6 +173,14 @@
                 });
             });
             
+            document.getElementById("section4").addEventListener("click", function (e) {
+                e.preventDefault();
+                console.log("a");
+                document.getElementById("section5").scrollIntoView({
+                        behavior: 'smooth'
+                });
+            });
+            
             var scene1 = document.querySelector("#parallax-scene-one");
             var parallaxInstance = new Parallax(scene1);
             
@@ -179,6 +193,8 @@
             var scene4 = document.querySelector("#parallax-scene-four");
             var parallaxInstance = new Parallax(scene4);
             
+            var scene5 = document.querySelector("#parallax-scene-five");
+            var parallaxInstance = new Parallax(scene5);
             
         </script>
         <script src="main.js"></script>

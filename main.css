@@ -42,6 +42,11 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.background-parallax-single {
+    object-fit: contain;
+    width: 100vw;
+    height: 100vh;
+}
 .parallax-scene {
     
 }
