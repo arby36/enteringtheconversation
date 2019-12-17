@@ -7,6 +7,10 @@ html {
 body {
     margin: 0 0 0 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .header-text {
     text-align: center;
     font-family: "Cambria";
@@ -38,10 +42,10 @@ body {
     
 }
 #section2 {
-    height: 175vh !important;
+    height: 200vh !important;
 }
 #background-parallax-section2 {
-    height: 175vh !important;
+    height: 200vh !important;
 }
 .background-parallax {
     object-fit: none;
