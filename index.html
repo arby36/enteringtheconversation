@@ -21,7 +21,7 @@
                             <div class="mdc-card">
                                 <h1 class="header-text">Entering the Conversation</h1>
                                 <h2 class="subheader-text">Alex Bruce</h2>
-                                <p class="text">Honors English 3/4| Michell | 2019</p>
+                                <p class="text">Honors English 3/4 | Michell | 2019</p>
                                 <p class="text">Click Anywhere to Continue</p>
                             </div>
                         </div>
@@ -32,37 +32,45 @@
         </div>
         <div id="section2">
             <div class="parallax-scene" id="parallax-scene-two">
-                <img src="slaveship.jpg" class="background-parallax" data-depth="0.1">
+                <img src="slaveship.jpg" class="background-parallax" id="background-parallax-section2" data-depth="0.1">
                 <div class="mdc-layout-grid section" data-depth="0.2" style="padding-top: 2%">
                     <div class="mdc-layout-grid__inner section">
                         <div class="mdc-layout-grid__cell">
                             <div class="mdc-card">
-                                <h1 class="header-text">"Entering the Conversation"</h1>
-                                <h2 class="text">-Ghandi</h2>
+                                <h1 class="header-text">"To <span class="italic">redesign</span> social systems we need first to acknowledge their <span class="italic">colossal</span> unseen dimensions."</h1>
+                                <h2 class="text">~Peggy McIntosh</h2>
                             </div>
                         </div>
                         <div class="mdc-layout-grid__cell">
                             <div class="mdc-card">
-                                <h1 class="header-text">"Entering the Conversation 1619 project lmao who did this"</h1>
-                                <h2 class="text">-President Barack Obama II</h2>
+                                <h1 class="header-text">"The <span class="italic">centuries-old</span> belief in races in physiology has continued to mask the brutal effects of <span class="italic">discrimination</span> and structural in equities."</h1>
+                                <h2 class="text">~Linda Villarosa</h2>
                             </div>
                         </div>
                         <div class="mdc-layout-grid__cell">
                             <div class="mdc-card">
-                                <h1 class="header-text">"Entering the Conversation"</h1>
+                                <h1 class="header-text">The shameful paradox of continuing chattel slaver in a nation founded on <span class="italic">individual freedom,</span> scholars today assert, led to a hardening of the racial <span class="italic">caste</span> system.</h1>
+                                <h2 class="text">~Nikole Hannah-Jones</h2>
                             </div>
                         </div>
                         <div class="mdc-layout-grid__cell">
                             <div class="mdc-card">
-                                <h1 class="header-text">"Entering the Conversation"</h1>
+                                <h1 class="header-text"><span class="italic">This</span> is America // Don't catch you slippin' now // Look at how I'm livin' now // <span class="italic">Police</span> be trippin' now</h1>
+                                <h2 class="text">~Childish Gambino</h2>
                             </div>
                         </div>
                         <div class="mdc-layout-grid__cell">
                             <div class="mdc-card">
-                                <h1 class="header-text">"Entering the Conversation"</h1>
+                                <h1 class="header-text">The argument is [...] that its culture, economy, politics and social relations are <span class="italic">inextricably</span> bound in the race-based chattel <span class="italic">slavery.</span></h1>
+                                <h2 class="text">~Jamelle Bouie</h2>
                             </div>
                         </div>
-                        
+                        <div class="mdc-layout-grid__cell">
+                            <div class="mdc-card">
+                                <h1 class="header-text">Although she feeds me bread of <span class="italic">bitterness,</span> // And sinks into my throat her tiger’s tooth, // Stealing my breath of life, I will confess // I <span class="italic">love</span> this cultured hell that tests my youth.</h1>
+                                <h2 class="text">~Claude McKay</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,7 +132,7 @@
         </div>
         <div id="section5">
             <div class="parallax-scene" id="parallax-scene-five">
-                <img src="feddyd.png" class="background-parallax" data-depth="0.1">
+                <img src="fire.jpg" class="background-parallax" data-depth="0.1" style="object-fit: cover">
                 <div class="mdc-layout-grid section" data-depth="0.2">
                     <div class="mdc-layout-grid__inner section">
                         <div class="mdc-layout-grid__cell"></div>
@@ -152,6 +160,10 @@
             document.getElementById("section1").addEventListener("click", function (e) {
                 e.preventDefault();
                 console.log("a");
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.resume();
+                var text = new SpeechSynthesisUtterance("In spite of substantial protections of racial minorities in government, racial discrimination still remains. The tentacles of slavery intertwined themselves so much in American society from 1619 to 1865 that we still struggle with systemic racism today. In my opinion, while we must be careful to not hurt those who did not actively choose to perpetuate a racist system, we must confront our culture’s systemic racial bias in order to eliminate it. Only then can we repay the wrongs of chattle slavery and achieve the idea of true equality that America was founded on.");
+                window.speechSynthesis.speak(text);
                 document.getElementById("section2").scrollIntoView({
                         behavior: 'smooth'
                 });
@@ -160,6 +172,7 @@
             document.getElementById("section2").addEventListener("click", function (e) {
                 e.preventDefault();
                 console.log("a");
+                window.speechSynthesis.pause();
                 document.getElementById("section3").scrollIntoView({
                         behavior: 'smooth'
                 });
@@ -168,6 +181,10 @@
             document.getElementById("section3").addEventListener("click", function (e) {
                 e.preventDefault();
                 console.log("a");
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.resume();
+                var text = new SpeechSynthesisUtterance("I am from don't throw that away -- I'm making a collage, And tubs of negatives in my grandparent's basement. I am from Never-gonna-let it go.");
+                window.speechSynthesis.speak(text);
                 document.getElementById("section4").scrollIntoView({
                         behavior: 'smooth'
                 });
@@ -176,6 +193,7 @@
             document.getElementById("section4").addEventListener("click", function (e) {
                 e.preventDefault();
                 console.log("a");
+                window.speechSynthesis.pause();
                 document.getElementById("section5").scrollIntoView({
                         behavior: 'smooth'
                 });
